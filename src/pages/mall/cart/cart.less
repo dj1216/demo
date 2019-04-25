@@ -1,0 +1,208 @@
+@import "../../../assets/mall/style/_Variables";
+.cart{
+  color: #8c8c8c;
+
+  .cart-body {
+    ._v-container[data-v-ecaca2b0]{
+      top:@margin-top!important;
+    }
+    .cart-item {
+      margin-top: 0.11rem;
+      background-color: #fff;
+      padding: 0.2rem 0.33rem;
+      .item-head {
+        height: 1rem;
+        text-align: left;
+        border-bottom: 1px solid @border-color;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+          width: 0.25rem;
+          height: 0.25rem;
+          margin:-0.05rem 0.1rem 0;
+        }
+        i{
+          margin-top: -3px;
+          color: #B7B7B7;
+        }
+      }
+      .item-body {
+        padding: 0.33rem 0;
+        display: flex;
+        justify-content: space-between;
+        .left {
+          line-height: 2rem;
+        }
+        .center1 {
+          img {
+            width: 1.9rem;
+            height: 1.9rem;
+            border-radius: 0.1rem;
+            margin: 0 0.33rem;
+          }
+
+        }
+        .right {
+          text-align: left;
+          width: 60%;
+          p:first-child {
+            color: #000;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: .5rem;
+          }
+          .spec {
+            margin: 0.15rem 0;
+            span {
+              margin-right: 0.1rem;
+            }
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.3rem;
+            span:first-child {
+              color: #fc3357;
+            }
+          }
+          .right-num:before{
+            display: none;
+          }
+          .right-num{
+            border: none;
+            padding-top: 0;
+            .vux-number-round .vux-number-selector-sub, .vux-number-round .vux-number-selector-plus{
+              padding:0rem;
+            }
+            .vux-number-input{
+              width: 0.5rem!important;
+              font-size: 16px !important;
+              height: 18px !important;
+            }
+            .svg{
+              width:0.18rem !important;
+              height:0.18rem !important;
+            }
+          }
+        }
+      }
+    }
+    .hot {
+      margin-bottom: -6px;
+      img {
+        width: 100%;
+        margin-top: 0.2rem;
+      }
+    }
+    .header_count {
+      padding: 0 0.1rem;
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+          width: 3.6rem;
+          margin-top: 0.1rem;
+          background: #fff;
+          padding-bottom: 0.25rem;
+          border-radius: 3px;
+          overflow: hidden;
+          img {
+            width: 3.6rem;
+            height: 3.6rem;
+          }
+          .shop_name {
+            padding: 0 0.15rem;
+            p {
+              margin-top: 0.2rem;
+              text-align: left;
+              color: #333333;
+              font-size: 0.28rem;
+            }
+            .price {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 0.4rem;
+              .price_main {
+                color: #fc3357;
+                font-size: 0.3rem;
+                span {
+                  color: #fc3357;
+                  font-size: 0.25rem;
+                }
+              }
+              span {
+                font-size: 0.25rem;
+                color: #a1a1a1;
+              }
+            }
+          }
+        }
+        li:nth-child(2n-1) {
+          margin-right: 0.1rem;
+        }
+      }
+    }
+  }
+  .cart-foot{
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 0.33rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 1rem;
+    line-height: 1rem;
+    box-shadow:0 0 5px 0px #cecece;
+    font-size: @font-big;
+    .left{
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      align-items: center;
+      span{
+        margin-bottom: -1px;
+      }
+    }
+    .right{
+      width: 70%;
+      text-align: right;
+      div{
+        display: inline-block;
+        span:last-child{
+          color: #fc3357;
+        }
+      }
+      div:last-child{
+        background-color: #fc3357;
+        width: 1.5rem;
+        height: 0.7rem;
+        text-align: center;
+        line-height: 0.7rem;
+        color: #fff;font-size: 0.3rem;
+        border-radius: 0.5rem;
+        margin-left: 0.35rem;
+      }
+    }
+  }
+}
+.weui-cell{
+  padding: 0!important;
+}
+.vux-header .vux-header-left .left-arrow:before{
+  width: 10px!important;
+  height: 10px!important;
+  border: 1px solid #333!important;
+  border-width: 1px 0 0 1px !important;
+  top: 11px !important;
+}
+.vux-header .vux-header-right a{
+  color: #999999!important;
+}

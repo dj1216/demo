@@ -1,0 +1,327 @@
+@import "../../../assets/mall/style/_Variables";
+.buy-notices{
+  background: #ffffff;
+  padding: 0.2rem .3rem;
+  p{
+    color: @font-main-color;
+    font-size: @font-more-big;
+  }
+  ul{
+    li{
+      box-sizing: border-box;
+      padding: .1rem 0;
+      p{
+        color: @font-main-color;
+        font-size: @font-big;
+      }
+      span{
+        color: @font-light-color;
+        font-size: @font-nomal;
+      }
+    }
+  }
+}
+.under-title{
+  background: #ffffff;
+  padding:0 .3rem;
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .title-one{
+    height: 1rem;
+    border-bottom: 1px solid @border-color;
+    p{
+      color: @font-main-color;
+      font-size: @font-more-big;
+    }
+    span{
+      color: @main-red-color;
+      font-size: @font-big;
+    }
+    .handle-count{
+      input{
+        outline: none;
+        border: none;
+        width: .5rem;
+        text-align: center;
+      }
+      img{
+        width: .4rem;
+        height: .4rem;
+      }
+    }
+    div{
+      img{
+        width: .3rem;
+        height: .3rem;
+      }
+      p{
+        color: @font-light-color;
+        font-size: @font-big;
+        margin-left: .2rem;
+      }
+    }
+  }
+  .title-two{
+    height: 2rem;
+    border-bottom: 1px solid @border-color;
+    p{
+      color: @font-main-color;
+      font-size: @font-nomal;
+    }
+    div{
+      img{
+        width: 1.51rem;
+        height: 1.34rem;
+        border-radius: .1rem;
+      }
+      div{
+        flex-direction: column;
+        margin-left: .2rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 1.34rem;
+        p{
+          font-size: @font-more-big;
+        }
+        span{
+          color: @font-light-color;
+          font-size: @font-nomal;
+          margin-top: .2rem;
+        }
+      }
+    }
+  }
+}
+.UnderIndex{
+  .swiper-pagination-bullet-active{
+    background: #fc3357 !important;
+    margin-right: .1rem;
+  }
+  .swiper-pagination-bullet{
+    margin-right: .1rem;
+  }
+  .seach_main{
+    .home_seach{
+      padding: 0;
+      .home_seach_left{
+        width:1.4rem;
+        p{
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .home_seach_input{
+        width:5rem;
+      }
+    }
+  }
+  .tab{
+    padding:0 0.3rem;
+    box-sizing: border-box;
+    margin-top:0.1rem;
+    height:1rem;
+    justify-content:space-around;
+    display: flex;
+    font-size:0.28rem;
+    align-items: center;
+    background:#fff;
+    position:relative;
+    div{
+     line-height:0.9rem;
+      border-bottom:2px solid #fff;
+    }
+    div.active{
+      color:@main-red-color;
+      border-bottom:2px solid @main-red-color;
+    }
+  }
+}
+.secthList_main{
+  .mescrollBox{
+    width: 100%;
+    position: absolute;
+    top:@margin-top;
+    bottom: 0;
+    height: auto !important;
+  }
+  .tab{
+    padding:0 0.3rem;
+    box-sizing: border-box;
+    margin-top: @margin-top;
+    height:1rem;
+    justify-content:space-around;
+    display: flex;
+    font-size:0.28rem;
+    align-items: center;
+    background:#fff;
+    position:relative;
+    div{
+      line-height:0.9rem;
+      border-bottom:2px solid #fff;
+    }
+    div.active{
+      color:@main-red-color;
+      border-bottom:2px solid @main-red-color;
+    }
+  }
+}
+
+.UnderpayMent_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .UnderpayMent_box{
+    margin-top:0.45rem;
+    font-size:@font-big;
+    .price{
+      font-size:@font-more-big;
+      color:@main-red-color;
+      margin-top:0.1rem;
+      .span{
+        font-size:@font-nomal;
+      }
+    }
+  }
+    .UnderpayMent{
+      margin-top:0.1rem;
+      height:1.8rem;
+      background:#fff;
+    }
+}
+.payUnder{
+  .payUnder_content{
+    padding:0.3rem;
+    background:#fff;
+    margin-top:1rem;
+    .payUnder_box{
+      display: flex;
+      border-bottom:1px solid @border-color;
+      padding-bottom:0.3rem;
+      .img_box{
+        img{
+          width:1.5rem;
+          height:1.5rem;
+          border-radius: 3px;
+        }
+      }
+      .text{
+        text-align: left;
+        margin-left:0.2rem;
+        font-size:@font-big;
+      }
+    }
+    .input_title{
+      text-align: left;
+      font-size: @font-big;
+      margin-top:0.3rem;
+    }
+    .input_box{
+      width:100%;
+      margin-top:0.3rem;
+      background: #f7f7f7;
+      height:0.85rem;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      .left{
+        width:0.85rem;
+        line-height:0.85rem;
+        font-size:0.35rem;
+        text-align: center;
+      }
+      .right{
+        input{
+          border: none;
+          outline: none;
+          background: none;
+          color:#000;
+        }
+      }
+    }
+
+  }
+  .btns{
+    padding:0 0.6rem;
+    margin-top:1.2rem;
+    .btn{
+      width:100%;
+      height:0.9rem;
+      background:@main-red-color;
+      text-align: center;
+      line-height:0.9rem;
+      font-size:@font-more-big;
+      border-radius: 10px;
+      color:#fff;
+    }
+  }
+}
+.image-text{
+  .image-body{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .text-title{
+      word-wrap: break-word;
+      box-sizing: border-box;
+      background: #ffffff;
+      padding: 0 .3rem;
+      .title-one{
+        color: @font-main-color;
+        font-size: @font-more-big;
+        text-align: center;
+        padding:.2rem 0;
+      }
+      .text-details{
+        .details-one{
+          color: @font-main-color;
+          font-size: @font-big;
+          font-weight: 600;
+          margin-top: .2rem;
+        }
+        ul{
+          li{
+            padding: .1rem 0;
+            color: @font-main-color;
+            font-size: @font-nomal;
+            p{
+              height: 100%;
+              span{
+                color: @font-light-color;
+                font-size: @font-small;
+              }
+            }
+          }
+        }
+        .details-two{
+          padding-bottom: .2rem;
+          color: @main-red-color;
+          font-size: @font-nomal;
+          span:first-child{
+            font-size: @font-more-big;
+            font-weight: 600;
+          }
+          span:nth-child(2){
+            color: @font-light-color;
+            margin-left: .2rem;
+          }
+        }
+      }
+      img{
+        width: 100%!important;
+      }
+    }
+    .buy-notices{
+      margin-top: .2rem;
+      ul{
+        padding-left: .3rem;
+      }
+      li{
+        list-style-type: disc;
+      }
+    }
+  }
+}

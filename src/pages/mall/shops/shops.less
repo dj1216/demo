@@ -1,0 +1,333 @@
+@import "../../../assets/mall/style/_Variables";
+
+//公共样式
+.item{
+  height: 1rem;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 0.3rem;
+  border-bottom: 1px solid @border-color;
+  img{
+    width: .28rem;
+  }
+  p{
+    color: @font-main-color;
+    font-size: @font-big;
+    text-align: left;
+  }
+  i{
+    color: @font-main-color;
+    font-size: @font-big;
+  }
+  input{
+    outline: none;
+    border: none;
+    height: 80%;
+    text-align: right;
+    color: @font-main-color;
+    font-size: @font-big;
+  }
+  span{
+    color: @main-red-color;
+    font-size: @font-big;
+  }
+}
+.list-item{
+  background: #ffffff;
+  margin-bottom: .1rem;
+  padding: 0 .3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    p{
+      color: @font-main-color;
+      font-size: @font-nomal;
+    }
+    span{
+      color: @font-light-color;
+      font-size: @font-small;
+    }
+  }
+  p{
+    color: @font-main-color;
+    font-size: @font-big;
+    span{
+      color: @main-red-color;
+      font-size: @font-more-big;
+    }
+  }
+  span{
+    color: @font-main-color;
+    font-size: @font-more-big;
+  }
+}
+.confirm1{
+  height: 2.7rem;
+  background: #ffffff;
+  button{
+    width: 80%;
+    height: 0.9rem;
+    background: #fc3357;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 1rem 10% 0;
+  }
+
+}
+.refund-foot{
+  background: #ffffff;
+  .title{
+    height: 1.5rem;
+    font-size: @font-more-big;
+    color: @font-main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list{
+    height: 1rem;
+    border-bottom: 1px solid @border-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .3rem;
+    align-items: center;
+    font-size: @font-big;
+    .checkbox{
+      img{
+        width:0.4rem;
+      }
+    }
+    .confirm1{
+      height: 2rem;
+    }
+  }
+}
+#center{
+  .center-body{
+    margin-top: @margin-top;
+    .item{
+      p{
+        width: 86%;
+      }
+    }
+  }
+}
+#center1{
+  .center-body{
+    margin-top: @margin-top;
+    .item{
+      p{
+        width: 86%;
+      }
+    }
+  }
+}
+#apply{
+  .apply-body{
+    margin-top: @margin-top;
+    .item{
+      p{
+        width: 40%;
+      }
+      input{
+        width: 60%;
+      }
+      span{
+        color: @font-light-color;
+      }
+    }
+    .one{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 1rem;
+      border-bottom: 1px solid @border-color;
+      color: @font-middle-color;
+      padding: 0 .3rem;
+      font-size: @font-big;
+      img{
+        width: .35rem;
+        margin-right: .2rem;
+      }
+      input{
+        border: none;
+        height: 90%;
+        text-align: left;
+        margin-left: .5rem;
+        outline:none;
+        color: @font-middle-color;
+      }
+    }
+    .two{
+      width: 90%;
+      height: 1.5rem;
+      margin: 0 auto;
+      border-radius: 0.1rem;
+      background: #F7F7F7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      textarea{
+        border:none;
+        resize: none;
+        background: #F7F7F7;
+        outline: none;
+      }
+    }
+    .uploadingLogo{
+      height: 2.4rem;
+      margin-top: .2rem;
+      background: #ffffff;
+      padding: 0 0.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid @border-color;
+      img{
+        width: 1.87rem;
+        height: 1.87rem;
+      }
+      p{
+        color: @font-main-color;
+        font-size: @font-big;
+        text-align: left;
+      }
+    }
+  }
+}
+#offOrders{
+  .mescrollBox{
+    width: 100%;
+    position: absolute;
+    top: @margin-top;
+    bottom: 0;
+    height: auto !important;
+  }
+  .off-body{
+    .list-item{
+      height: 1.5rem;
+    }
+  }
+}
+#underOrders{
+  .mescrollBox{
+    width: 100%;
+    position: absolute;
+    top: @margin-top;
+    bottom: 0;
+    height: auto !important;
+  }
+  .off-body{
+    .list-item{
+      height: 1.5rem;
+    }
+  }
+}
+#onOrders{
+  .mescrollBox{
+    width: 100%;
+    position: absolute;
+    top: @margin-top;
+    bottom: 0;
+    height: auto !important;
+  }
+  .on-body{
+    .list-item{
+      height: 1.4rem;
+      div{
+        p{
+          font-size: @font-big;
+          margin-bottom: 0;
+        }
+        span{
+          width: 23%;
+        }
+      }
+      p{
+        margin-bottom: .15rem;
+      }
+    }
+  }
+}
+#withdraw{
+  .wd-body{
+    margin-top: @margin-top;
+    background: #ffffff;
+    height: 100%;
+    .item{
+      p{
+        width: 86%;
+      }
+    }
+
+  }
+}
+#fund{
+  .fund-body{
+    margin-top: @margin-top;
+    .fund-item{
+      height: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      margin-bottom: .1rem;
+      img{
+        width: .3rem;
+        margin-right: .2rem;
+      }
+      p{
+        color: @font-middle-color;
+        font-size: @font-more-big;
+      }
+    }
+  }
+}
+#wdL{
+  .mescrollBox{
+    width: 100%;
+    position: absolute;
+    top: @margin-top;
+    bottom: 0;
+    height: auto !important;
+  }
+  .wdL-body{
+    .wdL-list{
+      height: 2rem;
+      padding: 0 0.3rem;
+      margin-bottom: .2rem;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .wdL-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        p{
+          color: @font-main-color;
+          font-size: @font-big;
+          span{
+            font-size: @font-more-big;
+            color: @font-main-color;
+          }
+        }
+        span{
+          color: @font-light-color;
+          font-size: @font-big;
+        }
+      }
+    }
+  }
+}
