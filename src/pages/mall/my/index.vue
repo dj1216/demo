@@ -1,13 +1,11 @@
 <template>
     <div id="my" v-if="showInfo">
+      <x-header :left-options="{showBack: false}" ><a slot="left" @click="goBack()" class="backBox" >
+        <i class="iconfont icon-back"></i></a>
+       {{$route.query.title ? $route.query.title : $route.meta.title}}
+      </x-header>
       <div class="mescrollBox">
         <mescroll-vue ref="mescroll" :down="mescrollDown" @init="mescrollInit">
-        <x-header :left-options="{showBack: false}" class="cart-head" >
-          <a @click="goBack()" slot="left" class="backBox"><i class="iconfont icon-back"></i></a>
-          <!-- <i data-v-afc99ee4="" class="iconfont icon-back"></i> -->
-          <a  class="head-right">个人中心</a>
-          <!-- // <a slot="right" :class="{'head-right':true,'font-color':!showFoot}" @click="footShow" v-if="list">管理</a> -->
-        </x-header>
           <div class="my-head">
             <img src="../../../assets/mall/img/my/bg.png" alt="">
             <div class="box">
@@ -252,8 +250,8 @@ export default {
     .mescrollBox {
       width: 100%;
       position: absolute;
-      top: 0;
-      bottom: 0px;
+      top: @margin-top;
+      bottom: 0;
       height: auto !important;
       .my-foot{
         margin-top: .2rem;

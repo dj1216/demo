@@ -4,7 +4,7 @@
       <div class="home_seach">
         <div class="home_seach_left backBox">
           <!--<img src="../../../assets/mall/img/home/person.png" alt="">-->
-          <div style="width: 100%; height: 100%"  @click="jumpTo({name:'mallUnderShop'})" v-if="$store.state.global.firstNav === '/home'">
+          <div style="width: 100%; height: 100%"  @click="goBack()" v-if="$store.state.global.firstNav === '/home'">
             <i class="iconfont icon-back" style="font-size: .4rem"></i>
           </div>
         </div>

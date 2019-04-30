@@ -2,7 +2,6 @@
       <div class="cart">
         <x-header :left-options="{showBack: false}" class="cart-head" >
           <a @click="goBack()" slot="left" class="backBox"><i class="iconfont icon-back"></i></a>
-          <!-- <i data-v-afc99ee4="" class="iconfont icon-back"></i> -->
           <a  class="head-right">购物车</a>
           <a slot="right" :class="{'head-right':true,'font-color':!showFoot}" @click="footShow" v-if="list">管理</a>
         </x-header>

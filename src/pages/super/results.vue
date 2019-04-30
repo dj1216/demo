@@ -1,5 +1,5 @@
 <template>
-  <div class="result" :style="{paddingTop: h+'px'}">
+  <div class="result">
     <div class="header">
       <i class="iconfont icon-back" @click="goBack()"></i>
       <div class="searchBox">
@@ -109,8 +109,7 @@ export default {
       },
       dataList: [],
       lastScrollTop: 0, // 路由切换时滚动条的位置
-      lastBounce: null, // 路由切换时是否禁止ios回弹
-      h: api.safeArea.top
+      lastBounce: null // 路由切换时是否禁止ios回弹
     }
   },
   watch: {

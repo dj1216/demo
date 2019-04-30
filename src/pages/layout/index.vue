@@ -53,7 +53,7 @@
         <!--<span slot="label" :style="{color: item.color}" v-else>{{item.text}}</span>-->
       <!--</tabbar-item>-->
     <!--</tabbar>-->
-<!--     <tabbar slot="bottom" class="tabbar" ref="tabbar" id="tabbar1" v-show="$route.meta.isShopShowTab && $isMallShop">
+  <!--   <tabbar slot="bottom" class="tabbar" ref="tabbar" id="tabbar1" v-show="$route.meta.isShopShowTab && $isMallShop">
       <tabbar-item :selected="$route.name === 'mallHome'" link="/mall/home">
         <img src="../../assets/mall/img/home/bottom/shouye.png" alt="" slot="icon">
         <img src="../../assets/mall/img/home/bottom/shouye_active.png" alt="" slot="icon-active">

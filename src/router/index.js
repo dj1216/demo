@@ -488,7 +488,7 @@ let router = new Router({
           path: '/mall/home',
           name: 'mallHome',
           component: resolve => require(['../pages/mall/home/index.vue'], resolve),
-          meta: {title: '商城首页', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: true}
+          meta: {title: '商城首页', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: false}
         },
         {
           path: '/mall/news',
@@ -572,7 +572,7 @@ let router = new Router({
           path: '/mall/my',
           name: 'mallMy',
           component: resolve => require(['../pages/mall/my/index.vue'], resolve),
-          meta: {title: '个人中心', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: true}
+          meta: {title: '个人中心', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: false}
         },
         {
           path: '/mall/footprint',
@@ -620,7 +620,7 @@ let router = new Router({
           path: '/mall/cart',
           name: 'mallCart',
           component: resolve => require(['../pages/mall/cart/index.vue'], resolve),
-          meta: {title: '购物车', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: true}
+          meta: {title: '购物车', keepAlive: false, isShowSearch: false, isShowTab: false, isShopShowTab: false}
         },
         {
           path: '/mall/shopCenter',
@@ -638,7 +638,7 @@ let router = new Router({
           path: '/mall/business',
           name: 'mallBusiness',
           component: resolve => require(['../pages/mall/business/index.vue'], resolve),
-          meta: {title: '商家首页', keepAlive: true, isShowSearch: false, isShowTab: false, isShopShowTab: true}
+          meta: {title: '商家首页', keepAlive: true, isShowSearch: false, isShowTab: false, isShopShowTab: false}
         },
         {
           path: '/mall/category',
@@ -722,7 +722,7 @@ let router = new Router({
           path: '/mall/balance',
           name: 'mallBalance',
           component: resolve => require(['../pages/mall/my/record/balance.vue'], resolve),
-          meta: {title: '余额信息', keepAlive: false, isShowSearch: false, isShowTab: false}
+          meta: {title: '余额信息', keepAlive: false, isShowSearch: false, isShowHead:true, isShowTab: false}
         },
         {
           path: '/mall/yueList',
@@ -824,7 +824,7 @@ let router = new Router({
           path: '/mall/underShop',
           name: 'mallUnderShop',
           component: resolve => require(['../pages/mall/underShop/index'], resolve),
-          meta: {title: '线下商家', keepAlive: false, isShowSearch: false, isShowTab: true, }
+          meta: {title: '线下商家', keepAlive: false, isShowSearch: false, isShowTab: true, isShopShowTab: false}
         },
         {
           path: '/mall/underMy',
